@@ -4,10 +4,10 @@ import Login from './component/Login.vue'
 export default [
   {
     path: '/',
-    component: App,
+    component: App
   },
   {
     path: '/login',
-    component: Login,
+    component: Login
   }
 ]

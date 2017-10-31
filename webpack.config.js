@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        use: ['babel-loader'],
+        use: ['babel-loader', 'eslint-loader'], 
         exclude: /node_modules/
       }
     ]
@@ -27,9 +27,10 @@ module.exports = {
     }
   },
   devServer: {
+    port: 8080,
+    open: true,
+    noInfo: true,
     compress: true,
-    port: 9000,
-    contentBase: path.join(__dirname, "dist")
   },
   plugins: [
     new HtmlWebpackPlugin({template: './index.html'}),

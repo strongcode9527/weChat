@@ -7,12 +7,10 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   mode: 'history',
-  routes
+  routes,
 })
 
-
-
 new Vue({
-  router,
+  router
 }).$mount('#root')
 

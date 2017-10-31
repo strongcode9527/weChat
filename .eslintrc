@@ -1,0 +1,8 @@
+{
+  "parser": "babel-eslint",
+  "extends": [ /* your usual extends */ ],
+  "plugins": ["vue"],
+  "rules": {
+    "vue/jsx-uses-vars": 2
+  }
+}
